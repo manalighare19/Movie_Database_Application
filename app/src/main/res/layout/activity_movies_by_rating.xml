@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    ************************ Assignment #HOMEWORK 03 *******************************************
+    *********************** File Name- activity_movies_by_rating.xml *************************************
+    ************************ Full Name- 1. Manali Ghare 2. Anup Deshpande (Group 19) ***********
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".movies_by_rating">
+
+
+    <TextView
+        android:id="@+id/movies_by_year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/show_rating"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/title_label"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:maxLength="50"
+        android:text="@string/title_label"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/name_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/desc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/description"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/name_label"
+        app:layout_constraintTop_toBottomOf="@id/name_label" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="05dp"
+        android:ems="10"
+        android:lines="4"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/desc_label"
+        app:layout_constraintTop_toBottomOf="@id/desc_label" />
+
+    <TextView
+        android:id="@+id/genre_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/genre"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/desc"
+        app:layout_constraintTop_toBottomOf="@id/desc" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Animation"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/desc"
+        app:layout_constraintLeft_toRightOf="@id/genre_label"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/desc" />
+
+    <TextView
+        android:id="@+id/rating_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/rating"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/genre_label"
+        app:layout_constraintTop_toBottomOf="@id/genre" />
+
+
+    <TextView
+        android:id="@+id/show_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="5/5"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/genre"
+        app:layout_constraintLeft_toRightOf="@id/rating_label"
+        app:layout_constraintTop_toBottomOf="@id/genre" />
+
+    <TextView
+        android:id="@+id/year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/year"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/rating_label"
+        app:layout_constraintTop_toBottomOf="@id/rating_label" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/year_label"
+        app:layout_constraintStart_toStartOf="@id/show_rating"
+        app:layout_constraintTop_toBottomOf="@id/show_rating" />
+
+    <TextView
+        android:id="@+id/IMDB_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/imdb"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/year_label"
+        app:layout_constraintTop_toBottomOf="@id/year_label" />
+
+    <TextView
+        android:id="@+id/imdb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="@string/imdb"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/IMDB_label"
+        app:layout_constraintTop_toBottomOf="@id/IMDB_label" />
+
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="15dp"
+        android:text="@string/finish_btn"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imdb"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/first_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@id/imdb"
+        app:layout_constraintTop_toBottomOf="@id/imdb"
+        app:srcCompat="@drawable/first" />
+
+    <ImageView
+        android:id="@+id/previous_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@id/first_image"
+        app:layout_constraintTop_toBottomOf="@id/imdb"
+        app:srcCompat="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/next_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/next"
+        app:layout_constraintTop_toBottomOf="@id/imdb"
+        app:layout_constraintLeft_toRightOf="@id/finish_btn"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <ImageView
+        android:id="@+id/last_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@id/desc"
+        app:layout_constraintLeft_toRightOf="@id/next_image"
+        app:layout_constraintTop_toBottomOf="@id/imdb"
+        app:srcCompat="@drawable/last" />
+
+</android.support.constraint.ConstraintLayout>

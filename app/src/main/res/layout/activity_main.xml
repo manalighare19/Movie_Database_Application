@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    ************************ Assignment #HOMEWORK 03 *******************************************
+    *********************** File Name- activity_main.xml *************************************
+    ************************ Full Name- 1. Manali Ghare 2. Anup Deshpande (Group 19) ***********
+-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/add_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:text="@string/add_movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/edit_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:text="@string/edit_label"
+        app:layout_constraintEnd_toEndOf="@id/add_movie"
+        app:layout_constraintStart_toStartOf="@id/add_movie"
+        app:layout_constraintTop_toBottomOf="@+id/add_movie" />
+
+    <Button
+        android:id="@+id/delete_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:text="@string/delete_movie"
+        app:layout_constraintEnd_toEndOf="@id/edit_movie"
+        app:layout_constraintStart_toStartOf="@id/edit_movie"
+        app:layout_constraintTop_toBottomOf="@id/edit_movie" />
+
+    <Button
+        android:id="@+id/show_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:text="@string/show_year"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/delete_movie"
+        app:layout_constraintStart_toStartOf="@id/delete_movie"
+        app:layout_constraintTop_toBottomOf="@+id/delete_movie" />
+
+    <Button
+        android:id="@+id/show_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:text="@string/show_rating"
+        app:layout_constraintEnd_toEndOf="@id/show_year"
+        app:layout_constraintStart_toStartOf="@id/show_year"
+        app:layout_constraintTop_toBottomOf="@+id/show_year" />
+</android.support.constraint.ConstraintLayout>
+
+
+

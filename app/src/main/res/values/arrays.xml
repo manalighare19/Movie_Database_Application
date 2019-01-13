@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ************************ Assignment #HOMEWORK 03 *******************************************
+    *********************** File Name- arrays.xml *************************************
+    ************************ Full Name- 1. Manali Ghare 2. Anup Deshpande (Group 19) ***********
+-->
+
+<resources>
+    <string-array name="genre_array">
+        <item>None Selected</item>
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Comedy</item>
+        <item>Documentry</item>
+        <item>Family</item>
+        <item>Horror</item>
+        <item>Crime</item>
+        <item>Others</item>
+    </string-array>
+</resources>
